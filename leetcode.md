@@ -5,15 +5,15 @@
 | Data Structures                               | Algorithms                                  |
 | --------------------------------------------- | ------------------------------------------- |
 | [Array](#Array)                               | [Recursion](#Recursion)                     |
-| [String](#String)                             | [BFS, DFS](#BFS, DFS)                       |
-| [Linked List](#Linked List)                   | [Dynamic Programming](#Dynamic Programming) |
+| [String](#String)                             | [BFS, DFS](#BFS-DFS)                        |
+| [Linked List](#Linked-List)                   | [Dynamic Programming](#Dynamic-Programming) |
 | [Stack](#Stack)                               | [Backtracking](#Backtracking)               |
 | [Queue](#Queue)                               | [Greedy](#Greedy)                           |
-| [Hash Table](#Hash Table)                     | [Mathematics](#Mathematics)                 |
-| [Trees - Binary, Binary Search, Heap](#Trees) | [Bit Masking](#Bit Masking)                 |
+| [Hash Table](#Hash-Table)                     | [Mathematics](#Mathematics)                 |
+| [Trees - Binary, Binary Search, Heap](#Trees) | [Bit Masking](#Bit-Masking)                 |
 | [Design](#Design)                             | Others - UF, Graphs, Two pointers           |
 
-## Dynamic Programming
+## Dynamic-Programming
 
 1. create recurrence relation like f(n) = f(n-1) + f(n-2)
 
@@ -555,7 +555,7 @@ class Solution:
 
 * Recursive solution
 
-<img src="C:\Users\82103\Desktop\Github\Algorithms\img\1039.PNG" alt="1039" style="zoom: 67%;" />
+<img src="img\1039.PNG" alt="1039" style="zoom: 67%;" />
 
 * poly(0,6) = triangle(0,3,6) + poly(0,3) + poly(3,6)
   * for k in range(1,n): min(0,n) = 0\*k\*n + min(0,k) + min(k,n)
@@ -609,7 +609,7 @@ class Solution:
   * if i and j distance lower than 3, cannot make triange: dp\[i][j]=0 for j-i<3
   * for k in between i and j, dp\[i][j] = dp\[i][k] + dp\[k][j] + traingle(i,k,j)
 
-  <img src="C:\Users\82103\Desktop\Github\Algorithms\img\1039dp.PNG" alt="1039dp" style="zoom: 67%;" />
+  <img src="img\1039dp.PNG" alt="1039dp" style="zoom: 67%;" />
 
 ##### 312. Burst Balloons
 
@@ -733,9 +733,9 @@ class Solution:
         return ans
 ````
 
-<img src="C:\Users\82103\Desktop\Github\Algorithms\img\1314a.PNG" alt="1314a" style="zoom:50%;" />
+<img src="img\1314a.PNG" alt="1314a" style="zoom:50%;" />
 
-<img src="C:\Users\82103\Desktop\Github\Algorithms\img\1314b.PNG" alt="1314b" style="zoom:50%;" />
+<img src="img\1314b.PNG" alt="1314b" style="zoom:50%;" />
 
 ##### 304. Range Sum Query 2D - Immutable
 
@@ -888,7 +888,7 @@ class Solution:
 
 ##### 123. Best Time to Buy and Sell Stock III
 
-<img src="C:\Users\82103\Desktop\Github\Algorithms\img\123.PNG" alt="123" style="zoom:50%;" />
+<img src="img\123.PNG" alt="123" style="zoom:50%;" />
 
 ````python
 class Solution:
@@ -1238,7 +1238,7 @@ class Solution:
 
 
 
-## BFS, DFS
+## BFS-DFS
 
 ##### 286. Walls and Gates
 
@@ -1329,7 +1329,7 @@ class Solution:
   * Python cannot add set in another set: use frozenset(set) to insert frozenset  in set
 * unique island: relative direction이 아닌 path로 판단하는 방법도 있음 (for example, "RLULLR")
 
-## Linked List
+## Linked-List
 
 ##### 445. Add Two Numbers II
 
@@ -1622,7 +1622,7 @@ class Solution:
 
 
 
-# Hash Table
+# Hash-Table
 
 ##### 347. Top K Frequent Elements
 
